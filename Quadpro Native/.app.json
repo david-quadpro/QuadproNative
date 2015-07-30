@@ -1,0 +1,15 @@
+{
+  "type": "NativeScript",
+  "isNew": true,
+  "dataProviders": [
+    {
+      "type": "dataProvider",
+      "title": "DefaultProvider",
+      "name": "defaultProvider",
+      "source": "everlive",
+      "offlineStorage": false,
+      "everliveKey": "NgnQCd7kJ4L3QPhS",
+      "everliveUrl": ""
+    }
+  ]
+}

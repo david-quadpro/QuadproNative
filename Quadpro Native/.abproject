@@ -1,0 +1,28 @@
+{
+  "ProjectName": "Quadpro Native",
+  "ProjectGuid": "8d3d5315-2803-41c0-98a1-207117689914",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.QuadproNative",
+  "DisplayName": "Quadpro Native",
+  "Author": "",
+  "Description": "Quadpro Native",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{F0A65104-D4F4-4012-B799-F612D75820F6}",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "FrameworkVersion": "1.1.2",
+  "Framework": "NativeScript"
+}
