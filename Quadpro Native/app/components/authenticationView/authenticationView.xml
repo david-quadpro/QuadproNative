@@ -1,0 +1,34 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" xmlns:widgets="utils/widgets" loaded="pageLoaded">
+
+    <GridLayout rows="auto, *">
+        <widgets:action-bar />
+        <StackLayout row="1">
+
+            <GridLayout rows="auto">
+                <StackLayout>
+                    <GridLayout columns="*, *" rows="auto" cssClass="form-item">
+                        <StackLayout height="50" />
+                        <Label text="Username" />
+                        <TextField col="1" text="{{ email }}" />
+                    </GridLayout>
+                    <StackLayout cssClass="form-item-border" height="1"></StackLayout>
+
+                    <GridLayout columns="*, *" rows="auto" cssClass="form-item">
+                        <StackLayout height="50" />
+                        <Label text="Password" />
+                        <TextField col="1" text="{{ password }}" secure="true" />
+                    </GridLayout>
+                    <StackLayout cssClass="form-item-border" height="1"></StackLayout>
+
+                    <GridLayout rows="auto, *" cssClass="form-buttons">
+                        <widgets:button text="Sign In" tap="{{ onSignin }}" />
+                    </GridLayout>
+                </StackLayout>
+            </GridLayout>
+            <!-- additional view content -->
+
+            <!-- START_CUSTOM_CODE_authenticationView -->
+            <!-- END_CUSTOM_CODE_authenticationView -->
+        </StackLayout>
+    </GridLayout>
+</Page>

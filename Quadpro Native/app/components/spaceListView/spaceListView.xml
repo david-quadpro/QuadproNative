@@ -1,0 +1,39 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" xmlns:widgets="utils/widgets" loaded="pageLoaded">
+
+    <GridLayout rows="auto, *">
+        <widgets:action-bar />
+        <StackLayout row="1">
+
+            <GridLayout rows="*">
+
+                <ListView items="{{ listItems }}">
+
+                    <ListView.itemTemplate>
+                        <GridLayout columns="*" cssClass="padded-label">
+                            <StackLayout height="50" />
+
+
+                            <StackLayout col="0" cssClass="padded-label-stack">
+                                <Label cssClass="title-label">
+                                    <Label.formattedText>
+                                        <FormattedString>
+                                            <FormattedString.spans>
+                                                <Span text="{{ header }}" fontAttributes="Bold" textWrap="true" />
+                                            </FormattedString.spans>
+                                        </FormattedString>
+                                    </Label.formattedText>
+                                </Label>
+                                <Label text="{{ description }}" textWrap="true" />
+                            </StackLayout>
+
+                        </GridLayout>
+                    </ListView.itemTemplate>
+                </ListView>
+            </GridLayout>
+            <!-- additional view content -->
+
+            <!-- START_CUSTOM_CODE_spaceListView -->
+            <!-- END_CUSTOM_CODE_spaceListView -->
+        </StackLayout>
+    </GridLayout>
+</Page>

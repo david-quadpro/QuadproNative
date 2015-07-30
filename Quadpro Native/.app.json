@@ -1,15 +1,96 @@
 {
   "type": "NativeScript",
-  "isNew": true,
+  "views": [
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "authentication",
+          "name": "authenticationViewModel",
+          "dataProvider": "defaultProvider",
+          "emailLabel": "Username",
+          "passwordLabel": "Password",
+          "signinLabel": "Sign In",
+          "signinRedirect": "home",
+          "enableRegistration": false
+        }
+      ],
+      "name": "authenticationView",
+      "title": "Log in",
+      "addToNavigation": false
+    },
+    {
+      "type": "view",
+      "components": [],
+      "name": "home",
+      "title": "Home",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "list",
+          "name": "buildingListViewModel",
+          "dataProvider": "quadproBackend",
+          "collection": "Building",
+          "imageField": "Photo",
+          "headerField": "Name",
+          "iconField": false,
+          "masterDetails": false,
+          "pullToRefresh": false,
+          "endlessScroll": false
+        }
+      ],
+      "name": "buildingListView",
+      "title": "Building List",
+      "addToNavigation": true,
+      "icon": "organize"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "list",
+          "name": "spaceListViewModel",
+          "dataProvider": "defaultProvider",
+          "collection": "Space",
+          "headerField": "Code",
+          "subHeaderField": "Name",
+          "masterDetails": false,
+          "pullToRefresh": false,
+          "endlessScroll": false
+        }
+      ],
+      "name": "spaceListView",
+      "title": "Space List",
+      "addToNavigation": true,
+      "icon": "organize"
+    }
+  ],
   "dataProviders": [
     {
       "type": "dataProvider",
-      "title": "DefaultProvider",
+      "everliveUrl": "//platform.telerik.com/bs-api/v1/",
       "name": "defaultProvider",
+      "title": "DefaultProvider",
       "source": "everlive",
-      "offlineStorage": false,
       "everliveKey": "NgnQCd7kJ4L3QPhS",
-      "everliveUrl": ""
+      "offlineStorage": false
+    },
+    {
+      "type": "dataProvider",
+      "everliveUrl": "//platform.telerik.com/bs-api/v1/",
+      "name": "quadproBackend",
+      "title": "Quadpro / Quadpro Backend",
+      "source": "everlive",
+      "everliveKey": "NgnQCd7kJ4L3QPhS",
+      "offlineStorage": false
     }
-  ]
+  ],
+  "name": "nativeScriptApp",
+  "navigation": "none",
+  "view": "authenticationView",
+  "skin": "native"
 }
