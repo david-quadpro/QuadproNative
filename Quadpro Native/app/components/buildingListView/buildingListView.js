@@ -24,7 +24,7 @@ function pageLoaded(args) {
 
                     icon: '~/images/icons/globe.png',
 
-                    image: item.Photo,
+                    image: item.Name,
 
                     header: item.Name,
 

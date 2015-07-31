@@ -2,7 +2,7 @@
 var _,
 
     _consts,
-    dataService = require('../../dataProviders/quadproBackend'),
+    dataService = require('../../dataProviders/defaultProvider'),
     // additional requires
 
     consts;
@@ -24,7 +24,7 @@ Service.prototype.getAllRecords = function(args) {
 
     expandExp = {
 
-        Photo: {
+        Name: {
             'SingleField': 'Uri'
         },
 

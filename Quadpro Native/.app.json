@@ -33,9 +33,9 @@
         {
           "type": "list",
           "name": "buildingListViewModel",
-          "dataProvider": "quadproBackend",
+          "dataProvider": "defaultProvider",
           "collection": "Building",
-          "imageField": "Photo",
+          "imageField": "Name",
           "headerField": "Name",
           "iconField": false,
           "masterDetails": false,
@@ -75,15 +75,6 @@
       "everliveUrl": "//platform.telerik.com/bs-api/v1/",
       "name": "defaultProvider",
       "title": "DefaultProvider",
-      "source": "everlive",
-      "everliveKey": "NgnQCd7kJ4L3QPhS",
-      "offlineStorage": false
-    },
-    {
-      "type": "dataProvider",
-      "everliveUrl": "//platform.telerik.com/bs-api/v1/",
-      "name": "quadproBackend",
-      "title": "Quadpro / Quadpro Backend",
       "source": "everlive",
       "everliveKey": "NgnQCd7kJ4L3QPhS",
       "offlineStorage": false
