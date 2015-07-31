@@ -6,7 +6,8 @@ provider = new TelerikBackendServices({
     url: '//platform.telerik.com/bs-api/v1/',
 
     apiKey: 'NgnQCd7kJ4L3QPhS',
-    scheme: 'https'
+    scheme: 'https',
+	offlineStorage: true
 });
 
 // START_CUSTOM_CODE_defaultProvider
